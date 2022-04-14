@@ -1,6 +1,6 @@
-const T = require("tesseract.js") // constando o tesseract
+const tssrct = require("tesseract.js") // constando o tesseract
 
-T.recognize('./imagem.png', 'eng', { logger: e => console.log(e) })
+tssrct.recognize('./imagem.png', 'eng', { logger: e => console.log(e) }) // função recognize do tesseract.js
     .then(out => console.log(out))
 
 // console.log do resultado
